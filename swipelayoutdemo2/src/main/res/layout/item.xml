@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gyf.swipelayoutdemo2.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="2dp"
+            android:text="分享赚73.27元" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_main_photo"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/iv_main_divide"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_main_photo"
+            android:background="#ffcccccc" />
+
+        <TextView
+            android:id="@+id/tv_main_product"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_main_divide"
+            android:text="{瓷肌} 祛斑美白套装" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_main_product"
+            android:layout_below="@id/tv_main_product"
+            android:layout_marginTop="30dp"
+            android:text="￥ 219" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/tv_main_product"
+            android:layout_below="@id/tv_main_product"
+            android:layout_marginTop="50dp"
+            android:background="#ffcccc" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_main_product"
+            android:layout_below="@id/tv_main_product"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="52dp"
+            android:text="126.14" />
+    </RelativeLayout>
+</com.gyf.swipelayoutdemo2.SwipeLayout>
